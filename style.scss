@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Lemonada|Montserrat&display=swap");
+
+$background-color: #F9F9F9;
+$headline-color: #8d2308e8;
+$text-color: #1d1b1d;
+$lemonada: "Lemonada", cursive;
+
+body {
+  background-color: $background-color;
+  max-width: 960px;
+  margin: auto;
+}
+
+.title {
+  background-color: #8cb5eb;
+
+  h1 {
+    color: $headline-color;
+    font-family: $lemonada;
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+p {
+  color: $text-color;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.profile-image-box {
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #20201f;
+  background-image: url("images/fire-banner-transparent.png");
+}
+
+nav a {
+    color: $text-color;
+    font-family: $lemonada;
+    font-size: 18px;
+}
+
+.submission-form{
+    max-width: 400px;
+    margin: auto;
+    
+    justify-content: center;
+    background-color: #7186ea;
+}
