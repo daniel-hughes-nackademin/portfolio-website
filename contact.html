@@ -14,9 +14,69 @@
     <div class="content">
       <h1>Kontaktformulär</h1>
 
-      <div class="submission-form">
-        <form action="" method="POST">Namn <input type="text" name="" /></form>
-      </div>
+      <form action="" method="POST" class="submission-form">
+        <h2>Fyll i Kontaktuppgifter</h2>
+
+        <label for="first-name">Förnamn</label>
+        <input
+          class="submission-field"
+          type="text"
+          name="first-name"
+          placeholder="Ange förnamn"
+          required
+          autofocus
+          tabindex="1"
+        />
+
+        <label for="last-name">Efternamn</label>
+        <input
+          class="submission-field"
+          type="text"
+          name="last-name"
+          placeholder="Ange efternamn"
+          required
+          tabindex="2"
+        />
+
+        <label for="email">Email</label>
+        <input
+          class="submission-field"
+          type="email"
+          name="email"
+          placeholder="Ange email"
+          required
+          tabindex="3"
+        />
+
+        <label for="message">Meddelande</label>
+        <textarea
+          class="submission-field"
+          name="message"
+          id="message"
+          cols="22"
+          rows="5"
+          placeholder="Ange meddelande"
+        ></textarea>
+
+        <input
+          class="submit-button"
+          type="submit"
+          name="submit"
+          value="Skicka"
+          tabindex="4"
+        />
+      </form>
+
+
+      <p id="contact-info">
+        Daniel Hughes <br>
+        0708-345-870 <br>
+        daniel.hughes@yh.nackademin.se    
+    </p>
+
+      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.2616036184268!2d18.021231251762817!3d59.345280881574524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d9d263b022d%3A0x82fc0f30ed84f9ed!2sNackademin%20AB!5e0!3m2!1sen!2sse!4v1581816959440!5m2!1sen!2sse" width="400" height="300" allowfullscreen=""></iframe>
+
+
     </div>
   </body>
   <footer>

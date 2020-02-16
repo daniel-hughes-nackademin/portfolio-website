@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Lemonada|Montserrat&display=swap");
 body {
   background-color: #f9f9f9;
-  max-width: 960px;
+  width: 960px;
   margin: auto;
 }
 
 .content {
   background-color: #8cb5eb;
+  padding-bottom: 50px;
 }
 
 h1 {
@@ -14,6 +15,15 @@ h1 {
   font-family: "Lemonada", cursive;
   font-size: 50px;
   margin: 0;
+  text-align: center;
+}
+
+h2 {
+  color: #1d1b1d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -63,8 +73,6 @@ nav a:hover {
   border-radius: 0px 10px 10px 0px;
   -webkit-transition: border-left 0.3s ease-in-out;
   transition: border-left 0.3s ease-in-out;
-  -webkit-transition: #f9f9f9 0.3s ease-in-out;
-  transition: #f9f9f9 0.3s ease-in-out;
 }
 
 nav .current-page-link {
@@ -75,10 +83,51 @@ nav .current-page-link {
 
 .submission-form {
   max-width: 400px;
-  min-height: 500px;
   margin: auto;
+  padding-bottom: 25px;
   background-color: #f9f9f9;
   border-radius: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.submission-field {
+  display: block;
+  margin: auto;
+  padding: 5px;
+  margin-top: 0px;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-left: 110px;
+}
+
+.submit-button {
+  display: block;
+  margin: auto;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #8cb5eb;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.submit-button:hover {
+  background-color: #28c430;
+}
+
+#map {
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+}
+
+#contact-info {
+  text-align: center;
+  margin-top: 20px;
 }
 
 footer {
