@@ -9,7 +9,7 @@ body {
   background-color: #8cb5eb;
 }
 
-.title h1 {
+h1 {
   color: #8d2308e8;
   font-family: "Lemonada", cursive;
   font-size: 50px;
@@ -21,6 +21,8 @@ p {
   color: #1d1b1d;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 20px;
 }
 
 .profile-image-box {
@@ -32,7 +34,7 @@ p {
           justify-content: center;
   border-style: solid;
   border-width: 1px;
-  background-color: #20201f;
+  background-color: #000;
   background-image: url("images/fire-banner-transparent.png");
 }
 
@@ -40,21 +42,25 @@ nav {
   display: block;
   text-align: center;
   background-color: #373737;
+  border-radius: 25px 25px 0px 0px;
+  padding: 10px;
 }
 
 nav a:link {
   font-family: "Lemonada", cursive;
   font-size: 20px;
   text-decoration: none;
+  padding-right: 5px;
   margin: 10px;
   border-left: 4px solid transparent;
-  color: #be8181;
+  border-radius: 10px;
 }
 
 nav a:hover {
   border-left: 4px solid;
   background-color: #000;
   color: #8d2308e8;
+  border-radius: 0px 10px 10px 0px;
   -webkit-transition: border-left 0.3s ease-in-out;
   transition: border-left 0.3s ease-in-out;
   -webkit-transition: #f9f9f9 0.3s ease-in-out;
@@ -63,7 +69,7 @@ nav a:hover {
 
 nav .current-page-link {
   border-left: 4px solid transparent;
-  background-color: #10cc39;
+  background-color: #28c430;
   color: #8d2308e8;
 }
 
@@ -72,5 +78,17 @@ nav .current-page-link {
   min-height: 500px;
   margin: auto;
   background-color: #f9f9f9;
+  border-radius: 25px;
+}
+
+footer {
+  background-color: #373737;
+  color: #8cb5eb;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  border-radius: 0px 0px 25px 25px;
 }
 /*# sourceMappingURL=style.css.map */

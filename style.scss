@@ -2,9 +2,11 @@
 
 $page-background-color: #f9f9f9;
 $background-color: #8cb5eb;
+$nav-footer-background: #373737;
 $headline-color: #8d2308e8;
 $text-color: #1d1b1d;
 $lemonada: "Lemonada", cursive;
+$monty: "Montserrat", sans-serif;
 
 body {
   background-color: $page-background-color;
@@ -16,7 +18,7 @@ body {
     background-color: $background-color;
 }
 
-.title {
+
 
   h1 {
     color: $headline-color;
@@ -25,12 +27,14 @@ body {
     margin: 0;
     text-align: center;
   }
-}
+
 
 p {
   color: $text-color;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: $monty;
+  margin: 0;
+  padding: 20px;
 }
 
 .profile-image-box {
@@ -38,36 +42,41 @@ p {
   justify-content: center;
   border-style: solid;
   border-width: 1px;
-  background-color: #20201f;
+  background-color: #000;
   background-image: url("images/fire-banner-transparent.png");
 }
 
 nav {
   display: block;
   text-align: center;
-  background-color: #373737;
+  background-color: $nav-footer-background;
+  border-radius: 25px 25px 0px 0px;
+  padding: 10px;
   
 
   a:link {
     font-family: $lemonada;
     font-size: 20px;
     text-decoration: none;
+    padding-right: 5px;
     margin: 10px;
     border-left: 4px solid transparent;
-    color: #be8181;
+    border-radius: 10px;
   }
 
   a:hover {
     border-left: 4px solid;
     background-color: #000;
     color: $headline-color;
+    border-radius: 0px 10px 10px 0px;
     transition: border-left 0.3s ease-in-out;
+    //transition: border-radius 0.3s ease-in-out;
     transition: $page-background-color 0.3s ease-in-out;
   }
 
   .current-page-link {
     border-left: 4px solid transparent;
-    background-color: rgb(16, 204, 57);
+    background-color: #28c430;
     color: $headline-color;
   }
 }
@@ -77,4 +86,16 @@ nav {
   min-height: 500px;  
   margin: auto;
   background-color: $page-background-color;
+  border-radius: 25px;
+}
+
+footer {
+    background-color: $nav-footer-background;
+    color: $background-color;
+    font-family: $monty;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border-radius: 0px 0px 25px 25px;
 }
