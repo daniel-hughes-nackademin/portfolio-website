@@ -1,73 +1,49 @@
-@import url("https://fonts.googleapis.com/css?family=Lemonada|Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap");
 
-$page-background-color: #f9f9f9;
-$background-color: #8cb5eb;
-$nav-footer-background: #373737;
-$headline-color: #8d2308e8;
-$text-color: #1d1b1d;
-$lemonada: "Lemonada", cursive;
-$monty: "Montserrat", sans-serif;
+//Colors
+$theme1: #ffe0b5;
+$theme2: #8a6552;
+$theme3: #462521;
+$theme4: #dbcc46;
+$theme5: #ca2e55;
+$bright-text: #efefef;
+$text-color: #232323;
+
+//Fonts
+$roboto: "Roboto", sans-serif;
+$open-sans: "Open Sans", sans-serif;
+
+//Size vaiables
+$header-height: 100px;
+$footer-height: 100px;
+
+* {
+  margin: 0;
+}
 
 body {
-  background-color: $page-background-color;
-  width: 960px;
-  margin: auto;
+  background-color: $theme1;
 }
 
-.content{
-    background-color: $background-color;
-    padding-bottom: 50px;
-}
-
-
-
-  h1 {
-    color: $headline-color;
-    font-family: $lemonada;
-    font-size: 50px;
-    margin: 0;
-    text-align: center;
-  }
-
-  h2 {
-    color: $text-color;
-    font-family: $monty;
-    font-size: 20px;
-    margin: 0;
-    padding-top: 20px;
-    text-align: center;
-  }
-
-
-p {
-  color: $text-color;
-  font-size: 20px;
-  font-family: $monty;
-  margin: 0;
-  padding: 20px;
-}
-
-.profile-image-box {
-  display: flex;
-  justify-content: center;
-  border-style: solid;
-  border-width: 1px;
-  background-color: #000;
-  background-image: url("images/fire-banner-transparent.png");
-}
-
-nav {
+header {
   display: block;
+  width: 100%;
+  height: $header-height;
+  line-height: $header-height;
   text-align: center;
-  background-color: $nav-footer-background;
-  border-radius: 25px 25px 0px 0px;
-  padding: 10px;
-  
+  background-color: $theme3;
+  text-shadow: 1px 4px $text-color;
+
+  a {
+    font-family: $open-sans;
+    font-size: 30px;
+    font-weight: bold;
+    color: $bright-text;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 
   a:link {
-    font-family: $lemonada;
-    font-size: 20px;
-    text-decoration: none;
     padding-right: 5px;
     margin: 10px;
     border-left: 4px solid transparent;
@@ -75,78 +51,177 @@ nav {
   }
 
   a:hover {
-    border-left: 4px solid;
+    border-left: $theme5 4px solid;
     background-color: #000;
-    color: $headline-color;
+    color: $theme5;
     border-radius: 0px 10px 10px 0px;
+    text-shadow: 0px 1px $theme4;
     transition: border-left 0.3s ease-in-out;
   }
 
-  .current-page-link {
+  .current-page {
     border-left: 4px solid transparent;
-    background-color: #28c430;
-    color: $headline-color;
+    background-color: $theme4;
+    color: $theme3;
+    text-shadow: 1px 2px $text-color;
   }
 }
 
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content {
+  width: 960px;
+  margin: auto;
+  padding-bottom: $footer-height + 50px;
+}
+
+h1 {
+  color: $theme5;
+  font-family: $roboto;
+  font-size: 50px;
+  margin: 0.5em;
+  text-align: center;
+  text-shadow: 1px 2px $text-color;
+}
+
+h2 {
+  color: $bright-text;
+  font-family: $roboto;
+  font-size: 20px;
+  padding-top: 20px;
+  text-align: center;
+  text-shadow: 1px 2px $text-color;
+}
+
+p {
+  color: $text-color;
+  font-size: 20px;
+  font-family: $open-sans;
+  margin: 20px 0;
+}
+
+#profile-image-box {
+  border-style: outset;
+  border-width: 2px;
+  border-color: $text-color;
+  background-color: #000;
+  background-image: url("images/fire-banner-transparent.png");
+
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  margin-bottom: 2em;
+}
+
+#profile-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: $theme5 outset 1.2px;
+}
+
+#portfolio-content {
+
+  img {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  h2 {
+    text-align: left;
+    font-size: 26px;
+    color: $theme5;
+  }
+
+  hr {
+    margin-top: 50px;
+  }
+
+  a {
+    color: $theme5;
+    text-decoration: none;
+    text-shadow: 1px 2px $bright-text;
+
+
+    &:hover {
+      color: $theme4;
+      text-shadow: 1px 1px $text-color;
+    }
+
+  }
+}
+
+
+
 .submission-form {
-  max-width: 400px; 
+  max-width: 400px;
   margin: auto;
   padding-bottom: 25px;
-  background-color: $page-background-color;
+  background-color: $theme3;
   border-radius: 25px;
-  font-family: $monty;
+  font-family: $open-sans;
+  border: $theme3 2px outset;
+  color: $bright-text;
 }
 
 .submission-field {
-    display: block;
-    margin : auto;
-    padding: 5px;
-    margin-top: 0px;
-    border-radius: 10px;
+  display: block;
+  margin: auto;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 label {
-    display: block;
-    margin-top: 20px;
-    margin-left: 110px;
+  display: block;
+  margin-top: 20px;
+  margin-left: 110px;
 }
 
 .submit-button {
-    display: block;
-    margin : auto;
-    padding: 5px;
-    margin-top: 20px;
-    border-radius: 10px;
-    background-color: $background-color;
-    font-family: $monty;
-    font-size: 14px;
-    
-
+  display: block;
+  margin: auto;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: $theme2;
+  font-family: $roboto;
+  font-size: 14px;
+  color: $bright-text;
+  text-shadow: 0px 1px $text-color;
 }
 
 .submit-button:hover {
-        background-color: #28c430;
+  background-color: $theme4;
+  color: $text-color;
+  text-shadow: 0px 1px $bright-text;
 }
 
 #map {
-    display: block;
-    margin: auto;
-    border-radius: 25px;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
 }
 
 #contact-info {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 footer {
-    background-color: $nav-footer-background;
-    color: $background-color;
-    font-family: $monty;
-    font-size: 20px;
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-    border-radius: 0px 0px 25px 25px;
+  background-color: $theme2;
+  color: $bright-text;
+  text-shadow: 1px 2px $text-color;
+  height: $footer-height;
+  font-family: $open-sans;
+  font-size: 20px;
+  text-align: center;
+  line-height: $footer-height;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }

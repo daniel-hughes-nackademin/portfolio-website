@@ -1,100 +1,153 @@
-@import url("https://fonts.googleapis.com/css?family=Lemonada|Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap");
+* {
+  margin: 0;
+}
+
 body {
-  background-color: #f9f9f9;
-  width: 960px;
-  margin: auto;
+  background-color: #ffe0b5;
 }
 
-.content {
-  background-color: #8cb5eb;
-  padding-bottom: 50px;
-}
-
-h1 {
-  color: #8d2308e8;
-  font-family: "Lemonada", cursive;
-  font-size: 50px;
-  margin: 0;
-  text-align: center;
-}
-
-h2 {
-  color: #1d1b1d;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  margin: 0;
-  padding-top: 20px;
-  text-align: center;
-}
-
-p {
-  color: #1d1b1d;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  padding: 20px;
-}
-
-.profile-image-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-style: solid;
-  border-width: 1px;
-  background-color: #000;
-  background-image: url("images/fire-banner-transparent.png");
-}
-
-nav {
+header {
   display: block;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
   text-align: center;
-  background-color: #373737;
-  border-radius: 25px 25px 0px 0px;
-  padding: 10px;
+  background-color: #462521;
+  text-shadow: 1px 4px #232323;
 }
 
-nav a:link {
-  font-family: "Lemonada", cursive;
-  font-size: 20px;
+header a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #efefef;
+  text-transform: uppercase;
   text-decoration: none;
+}
+
+header a:link {
   padding-right: 5px;
   margin: 10px;
   border-left: 4px solid transparent;
   border-radius: 10px;
 }
 
-nav a:hover {
-  border-left: 4px solid;
+header a:hover {
+  border-left: #ca2e55 4px solid;
   background-color: #000;
-  color: #8d2308e8;
+  color: #ca2e55;
   border-radius: 0px 10px 10px 0px;
+  text-shadow: 0px 1px #dbcc46;
   -webkit-transition: border-left 0.3s ease-in-out;
   transition: border-left 0.3s ease-in-out;
 }
 
-nav .current-page-link {
+header .current-page {
   border-left: 4px solid transparent;
-  background-color: #28c430;
-  color: #8d2308e8;
+  background-color: #dbcc46;
+  color: #462521;
+  text-shadow: 1px 2px #232323;
+}
+
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content {
+  width: 960px;
+  margin: auto;
+  padding-bottom: 150px;
+}
+
+h1 {
+  color: #ca2e55;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  margin: 0.5em;
+  text-align: center;
+  text-shadow: 1px 2px #232323;
+}
+
+h2 {
+  color: #efefef;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding-top: 20px;
+  text-align: center;
+  text-shadow: 1px 2px #232323;
+}
+
+p {
+  color: #232323;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  margin: 20px 0;
+}
+
+#profile-image-box {
+  border-style: outset;
+  border-width: 2px;
+  border-color: #232323;
+  background-color: #000;
+  background-image: url("images/fire-banner-transparent.png");
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  margin-bottom: 2em;
+}
+
+#profile-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: #ca2e55 outset 1.2px;
+}
+
+#portfolio-content img {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#portfolio-content h2 {
+  text-align: left;
+  font-size: 26px;
+  color: #ca2e55;
+}
+
+#portfolio-content hr {
+  margin-top: 50px;
+}
+
+#portfolio-content a {
+  color: #ca2e55;
+  text-decoration: none;
+  text-shadow: 1px 2px #efefef;
+}
+
+#portfolio-content a:hover {
+  color: #dbcc46;
+  text-shadow: 1px 1px #232323;
 }
 
 .submission-form {
   max-width: 400px;
   margin: auto;
   padding-bottom: 25px;
-  background-color: #f9f9f9;
+  background-color: #462521;
   border-radius: 25px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  border: #462521 2px outset;
+  color: #efefef;
 }
 
 .submission-field {
   display: block;
   margin: auto;
   padding: 5px;
-  margin-top: 0px;
   border-radius: 10px;
 }
 
@@ -110,13 +163,17 @@ label {
   padding: 5px;
   margin-top: 20px;
   border-radius: 10px;
-  background-color: #8cb5eb;
-  font-family: "Montserrat", sans-serif;
+  background-color: #8a6552;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
+  color: #efefef;
+  text-shadow: 0px 1px #232323;
 }
 
 .submit-button:hover {
-  background-color: #28c430;
+  background-color: #dbcc46;
+  color: #232323;
+  text-shadow: 0px 1px #efefef;
 }
 
 #map {
@@ -131,13 +188,16 @@ label {
 }
 
 footer {
-  background-color: #373737;
-  color: #8cb5eb;
-  font-family: "Montserrat", sans-serif;
+  background-color: #8a6552;
+  color: #efefef;
+  text-shadow: 1px 2px #232323;
+  height: 100px;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   text-align: center;
-  margin: 0;
-  padding: 10px;
-  border-radius: 0px 0px 25px 25px;
+  line-height: 100px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

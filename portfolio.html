@@ -4,19 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Daniel Hughes Website</title>
+    <title>Daniel Hughes' Website</title>
   </head>
   <body>
-    <nav>
-      <a href="index.html">Start</a> |
-      <a class="current-page-link" href="portfolio.html">Portfolio</a> |
-      <a href="contact.html">Kontakt</a>
-    </nav>
-    <div class="content">
-      <h1>Portfolio</h1>
+    <div class="page">
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="current-page" href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+      <div class="content">
+        <h1>Portfolio</h1>
+        <div id="portfolio-content">
+          <h2>Webshop Simulation</h2>
+          <p>
+            A project that shows a webshop style GUI and interacts with a MySQL
+            database using special procedures to place orders and do other
+            operations while modeling the table entities and using the data in
+            java. -
+            <a
+              href="https://github.com/daniel-hughes-nackademin/Webshop_Skor"
+              target="_blank"
+              >See project on GitHub</a
+            >
+          </p>
+          <img src="images/webshop-shoes1.png" alt="Webshop project 1" />
+          <img src="images/webshop-shoes2.png" alt="Webshop project 2" />
+          <hr />
+          <h2>Black Jack Game</h2>
+          <p>
+            A simple Black Jack game that shows faces for the player and dealer
+            with reactions to different outcomes. Number of decks and rounds can
+            be set via sliders which saves to properties file. Number of games
+            won or lost are also tracked. The code is written with MVC in mind
+            and implements subject-observer interface. -
+            <a
+              href="https://github.com/daniel-hughes-nackademin/Uppgift_2-Daniel_Hughes-MVC_Black_Jack"
+              target="_blank"
+              >See project on GitHub</a
+            >
+          </p>
+          <img
+            src="images/black-jack-normal.png"
+            alt="Black Jack normal gameplay"
+          />
+          <img src="images/black-jack-loss.png" alt="Black Jack round lost" />
+          <img src="images/black-jack-win.png" alt="Black Jack round won" />
+          <hr />
+          <h2>Picture Tile Game</h2>
+          <p>
+            A tile game built in Java Swing with options for playing a picture
+            game or a numbers game. The game can be played normally or with a
+            time limit. The game is multi-threaded featuring advertisement
+            images and facial expressions that get more desperate if you run low
+            on time. These features can be toggled on or off. It's also possible
+            to import custom pictures to play with. -
+            <a
+              href="https://github.com/daniel-hughes-nackademin/TileMasterGame"
+              target="_blank"
+              >See project on GitHub</a
+            >
+          </p>
+          <img
+            src="images/tile-game-picture.png"
+            alt="Tile game picture mode"
+          />
+          <img src="images/tile-game-loss.png" alt="Tile game lost" />
+          <hr />
+          <h2>Group Project Banking Simulation</h2>
+          <p>
+            In this group project we built two CRUD applications connected to a
+            MySQL database; one for admin and one for customers. In the admin
+            program CRUD operations are possible for most attributes. Once
+            customers log in they can make withdrawals but have limited access. -
+            <a href="https://github.com/daniel-hughes-nackademin/The_Bank"
+              >See project on GitHub</a
+            >
+          </p>
+          <img src="images/bank-admin-program.png" alt="Bank Admin Program">
+          <img src="images/bank-customer-program.png" alt="Bank Customer Program">
+
+          <h1>
+            <a
+              href="https://github.com/daniel-hughes-nackademin"
+              target="_blank"
+              >See All GitHub Repositories</a
+            >
+          </h1>
+        </div>
+      </div>
+      <footer>
+        &copy; Daniel Hughes 2020
+      </footer>
     </div>
   </body>
-  <footer>
-    &copy; Daniel Hughes 2020
-  </footer>
 </html>
